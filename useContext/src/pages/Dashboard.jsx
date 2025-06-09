@@ -13,6 +13,10 @@ const Dashboard = () => {
         }
     };
 
+const handleGoToInformation = () => {
+  navigate("/information");
+};
+
     return (
         <div className="dashboard-container">
             <div className="dashboard-card">
@@ -22,6 +26,9 @@ const Dashboard = () => {
                 </p>
                 <button className="dashboard-button" onClick={handleLogout}>
                     Cerrar Sesion
+                </button>
+                <button className="dashboard-button" onClick={handleGoToInformation}>
+                    Ver Información
                 </button>
             </div>
         </div>

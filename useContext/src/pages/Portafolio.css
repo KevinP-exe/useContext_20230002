@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;  /* Fondo oscuro */
+  color: #e0e0e0;  /* Texto claro */
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sección de bienvenida */
+.intro {
+  background: linear-gradient(135deg, #333, #555);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.intro .name {
+  font-weight: bold;
+  color: #ffcb00;  /* Amarillo brillante para resaltar */
+}
+
+/* Sección de habilidades */
+.skills {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.skill-set {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #1f1f1f;
+  color: #ffcb00;  /* Habilidades en amarillo */
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: 2px solid #444;  /* Bordes sutiles */
+}
+
+.skill:hover {
+  background-color: #444;
+}
+
+/* Sección de proyectos */
+.projects {
+  padding: 40px 0;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.project-card {
+  background-color: #2b2b2b;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(50% - 40px);
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  color: #ffcb00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de contacto */
+.contact {
+  background-color: #333;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  border: 2px solid #555;
+}
+
+.contact button {
+  background-color: #ffcb00;
+  color: #333;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #ff9800;
+}
+

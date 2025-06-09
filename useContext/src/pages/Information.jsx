@@ -1,7 +1,16 @@
 import React from "react";
 import "./Information.css";
+import { useNavigate } from "react-router-dom";
 
-const Information = () => (
+const Information = () => {
+
+  const navigate = useNavigate();
+
+  const handleGoToInformation = () => {
+  navigate("/dashboard");
+};
+
+return (
   <div className="info-container">
     <h1>¿Qué es <code>useContext</code> en React?</h1>
     <p>
@@ -25,7 +34,11 @@ function MyComponent() {
     <p>
       En este ejemplo, <code>useContext(MyContext)</code> devuelve el valor actual del contexto <code>MyContext</code>.
     </p>
+    <button className="dashboard-button" onClick={handleGoToInformation}>
+                    Dashboard
+                </button>
   </div>
 );
+};
 
 export default Information;
